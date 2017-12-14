@@ -280,8 +280,8 @@ func getLowercase(a byte) Banner {
 			`    ___`,
 			` __/ _/`,
 			`/_  _/ `,
-			` /_/   `,
-			`       `,
+			` / /   `,
+			`/_/    `,
 		}
 	case 'b':
 		return Banner{
@@ -342,10 +342,10 @@ func getLowercase(a byte) Banner {
 	case 'y':
 		return Banner{
 			`     `,
-			`__  _`,
-			`\ \//`,
-			`/__/ `,
-			`     `,
+			` _  _`,
+			` \\//`,
+			` / / `,
+			`/_/  `,
 		}
 	case 'u':
 		return Banner{
@@ -365,11 +365,11 @@ func getLowercase(a byte) Banner {
 		}
 	case 'j':
 		return Banner{
-			`    __`,
-			`   /_/`,
-			` __/ /`,
-			`/___/ `,
-			`      `,
+			`     __`,
+			`    /_/`,
+			`    / /`,
+			` __/ / `,
+			`/___/  `,
 		}
 	case 'h':
 		return Banner{
@@ -502,7 +502,7 @@ func (b Banner) Append(a Banner) {
 	}
 }
 
-func GetBanner(str string) Banner {
+func NewBanner(str string) Banner {
 	banner := getCase(str[0])
 	for i := 1; i < len(str); i++ {
 		banner.Append(getCase(str[i]))
