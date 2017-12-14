@@ -24,7 +24,10 @@ func TestNewBanner_11(t *testing.T) { NewBanner("Spring").Show() }
 func TestNewBanner_12(t *testing.T) { NewBanner("Summer").Show() }
 func TestNewBanner_13(t *testing.T) { NewBanner("Autumn").Show() }
 
-
 func TestNewBanner_echo(t *testing.T) {
 	NewBanner("Echo").Show()
+	NewBanner("Autopattern").Show()
 }
+
+//func TestNewBanner_5(t *testing.T) { NewBanner("Friday").Show() }
+//func TestNewBanner_11(t *testing.T) { NewBanner("Spring").Show() }

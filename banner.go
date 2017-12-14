@@ -481,20 +481,61 @@ func getSumMinimun(as, bs []int) int {
 	return min
 }
 
+
+type UnionRecord struct {
+	backPos		int
+	forwardPos	int
+	shouldUnion	bool
+}
+
+func isUnionCode(c byte) bool {
+	return c == ' ' || c == '/' || c == '_'
+}
+
 func (b Banner) Append(a Banner) {
 	back := b.GetEmptyNumber(true)
 	forward := a.GetEmptyNumber(false)
 	erase := getSumMinimun(back, forward)
-	for i, _ := range b {
-		var backGet, forwardGet int
-		if erase > back[i] {
-			backGet = back[i]
-			forwardGet = erase - backGet
+
+        unionRecords := []UnionRecord{}
+        for i, _ := range b {
+                record := UnionRecord{}
+                if erase > back[i] {
+			record.backPos = back[i]
+			record.forwardPos = erase - record.backPos
 		} else {
-			backGet = erase
-			forwardGet = 0
+			record.backPos = erase
+			record.forwardPos = 0
 		}
-		b[i] = b[i][:len(b[i]) - backGet] + a[i][forwardGet:]
+		bByte := b[i][len(b[i]) - record.backPos - 1]
+		fByte := a[i][record.forwardPos]
+                if isUnionCode(bByte) && isUnionCode(fByte) {
+			record.shouldUnion = true
+		} else if bByte == ' ' || fByte == ' ' {
+			record.shouldUnion = true
+		}
+                unionRecords = append(unionRecords, record)
+        }
+
+	shouldAraseMoreOne := true
+	for _, record := range unionRecords {
+		if !record.shouldUnion {
+			shouldAraseMoreOne = false
+		}
+	}
+
+	for i, _ := range b {
+                record := unionRecords[i]
+                backGet := len(b[i]) - record.backPos
+                forwardGet := record.forwardPos
+		if shouldAraseMoreOne {
+			if b[i][backGet - 1] == ' ' {
+				backGet -= 1
+			} else {
+				forwardGet += 1
+			}
+		}
+		b[i] = b[i][:backGet] + a[i][forwardGet:]
 	}
 }
 
