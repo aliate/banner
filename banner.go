@@ -1,210 +1,412 @@
-package main
+package banner
 
 import (
 	"fmt"
 )
 
-func getLowercase(a byte) []string {
-	switch string(a) {
-	case "a":
-		return []string{
+type Banner []string
+
+func getUppercase(a byte) Banner {
+	switch a {
+	case 'A':
+		return Banner{
+			`   ___ `,
+			`  /   |`,
+			` / _| |`,
+			`/_/ |_|`,
+		}
+	case 'C':
+		return Banner{
+			`  ____`,
+			` / __/`,
+			`/ /___`,
+			`\____/`,
+		}
+	case 'O':
+		return Banner{
+			`  ___  `,
+			` / _ \ `,
+			`| |_| |`,
+			` \___/ `,
+		}
+	case 'E':
+		return Banner{
+			`   ____`,
+			`  / __/`,
+			` / _/  `,
+			`/___/  `,
+		}
+	case 'S':
+		return Banner{
+			`  ___ `,
+			` / __|`,
+			`\__ \ `,
+			`|___/ `,
+		}
+	case 'T':
+		return Banner{
+			` _____`,
+			`/_  _/`,
+			` / /  `,
+			`/_/   `,
+		}
+	case 'F':
+		return Banner{
+			`   ____`,
+			`  / __/`,
+			` / __/ `,
+			`/_/    `,
+		}
+	case 'B':
+		return Banner{
+			`   ___ `,
+			`  / _ \`,
+			` / _ \ `,
+			`/____/ `,
+		}
+	case 'D':
+		return Banner{
+			`   __  `,
+			`  / _ \`,
+			` / _/ /`,
+			`/____/ `,
+		}
+	case 'I':
+		return Banner{
+			`   __`,
+			`  / /`,
+			` / / `,
+			`/_/  `,
+		}
+	case 'X':
+		return Banner{
+			`__  __`,
+			`\ \/ /`,
+			` |  | `,
+			`/_/\_\`,
+		}
+	case 'W':
+		return Banner{
+			`___    _`,
+			`| | _ //`,
+			`| |//// `,
+			`|_/\_/  `,
+		}
+	case 'Z':
+		return Banner{
+			`  _____`,
+			` /__  /`,
+			`  / /_ `,
+			`/____/ `,
+		}
+	case 'R':
+		return Banner{
+			`   ___ `,
+			`  /  _\`,
+			` / /__/`,
+			`/_/ \_\`,
+		}
+	case 'Y':
+		return Banner{
+			`__  _`,
+			`\ \//`,
+			` | | `,
+			` |_| `,
+		}
+	case 'U':
+		return Banner{
+			`  __ __`,
+			` / // /`,
+			`/ // / `,
+			`\___/  `,
+		}
+	case 'K':
+		return Banner{
+
+			`   __ _`,
+			`  / ///`,
+			` /   / `,
+			`/_/\_\ `,
+		}
+
+	case 'J':
+		return Banner{
+			`     __`,
+			`    / /`,
+			` __/ / `,
+			`/___/  `,
+		}
+	case 'H':
+		return Banner{
+			`   __ __`,
+			`  / // /`,
+			` / _  / `,
+			`/_//_/  `,
+		}
+	case 'G':
+		return Banner{
+			`  ____ `,
+			` / __/ `,
+			`| ||__|`,
+			` \___/ `,
+		}
+	case 'V':
+		return Banner{
+
+			`__    _`,
+			`\ \  //`,
+			` \ \// `,
+			`  \_/  `,
+		}
+	case 'M':
+		return Banner{
+
+			`   __ __`,
+			`  / |/ /`,
+			` / //// `,
+			`/_////  `,
+		}
+	case 'P':
+		return Banner{
+			`   ___ `,
+			`  / _ \`,
+			` / ___/`,
+			`/_/    `,
+		}
+	case 'L':
+		return Banner{
+
+			`   __`,
+			`  / /`,
+			` / /_`,
+			`/___/`,
+		}
+	case 'N':
+		return Banner{
+			`   __ __`,
+			`  / // /`,
+			` / /\ / `,
+			`/_//_/  `,
+		}
+	case 'Q':
+		return Banner{
+			` ___  `,
+			`/  _ \`,
+			`| |_||`,
+			`\____\`,
+		}
+	default:
+		return Banner{
+			``,``,``,``,
+		}
+	}
+}
+
+func getLowercase(a byte) Banner {
+	switch a {
+	case 'a':
+		return Banner{
 			`      `,
 			` ___  `,
 			`/ _ | `,
 			`\____/`,
 		}
-	case "c":
-		return []string{
+	case 'c':
+		return Banner{
 			`     `,
 			`  ___`,
 			`/ __/`,
 			`\__/ `,
 		}
-	case "o":
-		return []string{
+	case 'o':
+		return Banner{
 			`     `,
 			` ___ `,
 			`/ _ \`,
 			`\___/`,
 		}
 
-	case "e":
-		return []string{
+	case 'e':
+		return Banner{
 			`     `,
 			` ___ `,
 			`/ __|`,
 			`\___/`,
 		}
-	case "s":
-		return []string{
+	case 's':
+		return Banner{
 			`     `,
-			` ___ `,
-			`/ __\`,
-			`|___/`,
+			` ____`,
+			`/ __/`,
+			`/___/`,
 		}
-	case "t":
-		return []string{
+	case 't':
+		return Banner{
 			`    __ `,
 			` __/ /_`,
 			`/_  __/`,
 			` /__/  `,
 		}
-	case "f":
-		return []string{
+	case 'f':
+		return Banner{
 			`    ___`,
 			` __/ _/`,
 			`/_  _/ `,
 			` /_/   `,
 		}
-	case "b":
-		return []string{
+	case 'b':
+		return Banner{
 			`   __ `,
 			`  / / `,
 			` / _ \`,
 			`/____/`,
 		}
-	case "d":
-		return []string{
+	case 'd':
+		return Banner{
 			`    __`,
 			` __/ /`,
 			`/ _ / `,
 			`\__/  `,
 		}
-	case "i":
-		return []string{
+	case 'i':
+		return Banner{
 			`  __`,
 			` /_/`,
 			` / /`,
 			`/_/ `,
 		}
-	case "x":
-		return []string{
+	case 'x':
+		return Banner{
 			`     `,
 			`__  _`,
 			`\ \//`,
 			`/_/\\`,
 		}
-	case "w":
-		return []string{
+	case 'w':
+		return Banner{
 			`       `,
 			`  _ _ _`,
 			` / ////`,
 			`/_/\_/ `,
 		}
-	case "z":
-		return []string{
+	case 'z':
+		return Banner{
 			`     `,
 			` ____`,
 			`/_  /`,
 			`/___/`,
 		}
-	case "r":
-		return []string{
+	case 'r':
+		return Banner{
 			`      `,
 			`  ___ `,
 			` / __\`,
 			`/_/   `,
 		}
-	case "y":
-		return []string{
+	case 'y':
+		return Banner{
 			`     `,
 			`__  _`,
 			`\ \//`,
 			`/__/ `,
 		}
-	case "u":
-		return []string{
+	case 'u':
+		return Banner{
 			`      `,
 			` __ __`,
 			`/ // /`,
 			`\____/`,
 		}
-	case "k":
-		return []string{
+	case 'k':
+		return Banner{
 			`      `,
 			`  __ _`,
 			` / ///`,
 			`/_/\_\`,
 		}
-	case "j":
-		return []string{
+	case 'j':
+		return Banner{
 			`    __`,
 			`   /_/`,
 			` __/ /`,
 			`/___/ `,
 		}
-	case "h":
-		return []string{
+	case 'h':
+		return Banner{
 			`   __ `,
 			`  / / `,
 			` / _ \`,
 			`/_//_/`,
 		}
-	case "g":
-		return []string{
+	case 'g':
+		return Banner{
 			`  ____`,
 			` / _ /`,
 			`_\_ / `,
 			`\__/  `,
 		}
-	case "v":
-		return []string{
+	case 'v':
+		return Banner{
 			`     `,
 			`__  _`,
 			`\ \//`,
 			` \_/ `,
 		}
-	case "m":
-		return []string{
+	case 'm':
+		return Banner{
 			`       `,
 			`  __ __`,
 			` / |/ /`,
 			`/_//// `,
 		}
-	case "p":
-		return []string{
+	case 'p':
+		return Banner{
 			`   ___ `,
 			`  / _ \`,
 			` / ___/`,
 			`/_/    `,
 		}
-	case "l":
-		return []string{
+	case 'l':
+		return Banner{
 			`   __`,
 			`  / /`,
 			` / /_`,
 			`/___/`,
 		}
-	case "n":
-		return []string{
+	case 'n':
+		return Banner{
 			`      `,
 			`  __  `,
 			` / _ \`,
 			`/_//_/`,
 		}
-	case "q":
-		return []string{
+	case 'q':
+		return Banner{
 			` _____`,
 			`/ _  /`,
 			`\_  / `,
 			` /_/  `,
 		}
 	default:
-		return []string{
-			``,
-			``,
-			``,
-			``,
+		return Banner{
+			``,``,``,``,
 		}
 	}
 }
 
-func GetBanner(str string) []string {
-	result := [][]string{}
-	for i := 0; i < len(str); i++ {
-		result = append(result, getLowercase(str[i]))
+func getCase(a byte) Banner{
+	if a >= 'a' && a <= 'z' {
+		return getLowercase(a)
 	}
-	banner := []string{}
+	return getUppercase(a)
+}
+
+func GetBanner(str string) Banner {
+	result := []Banner{}
+	for i := 0; i < len(str); i++ {
+		result = append(result, getCase(str[i]))
+	}
+	banner := Banner{}
 	for i := 0; i < 4; i++ {
 		ss := ""
 		for _, v := range result {
@@ -215,10 +417,9 @@ func GetBanner(str string) []string {
 	return banner
 }
 
-func main() {
-	ss := "autopattern"
-	result := GetBanner(ss)
-	for _, v := range result {
+func (b Banner) Show() {
+	for _, v := range b {
 		fmt.Println(v)
 	}
 }
+
