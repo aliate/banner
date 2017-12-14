@@ -449,11 +449,7 @@ func getCase(a byte) Banner{
 	return getUppercase(a)
 }
 
-func (b Banner) Show() {
-	for _, v := range b {
-		fmt.Println(v)
-	}
-}
+
 
 func (b Banner) GetEmptyNumber(back bool) []int {
 	result := []int{}
@@ -508,4 +504,10 @@ func NewBanner(str string) Banner {
 		banner.Append(getCase(str[i]))
 	}
 	return banner
+}
+
+func (b Banner) Show() {
+	for _, v := range b {
+		fmt.Println(v)
+	}
 }
