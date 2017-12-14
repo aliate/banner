@@ -437,7 +437,7 @@ func getLowercase(a byte) Banner {
 		}
 	default:
 		return Banner{
-			``,``,``,``,
+			``,``,``,``,``,
 		}
 	}
 }
