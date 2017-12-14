@@ -5,6 +5,7 @@ import (
 	. "github.com/aliate/banner"
 )
 
+
 func TestGetBanner_1(t *testing.T) { GetBanner("Monday").Show() }
 func TestGetBanner_2(t *testing.T) { GetBanner("Tuseday").Show() }
 func TestGetBanner_3(t *testing.T) { GetBanner("Wednesday").Show() }
@@ -23,3 +24,8 @@ func TestGetBanner_11(t *testing.T) { GetBanner("Spring").Show() }
 func TestGetBanner_12(t *testing.T) { GetBanner("Summer").Show() }
 func TestGetBanner_13(t *testing.T) { GetBanner("Autumn").Show() }
 
+
+func TestGetBanner_spring(t *testing.T) {
+	banner := GetBanner("Spring")
+	banner.Show()
+}

@@ -14,6 +14,7 @@ func getUppercase(a byte) Banner {
 			`  /   |`,
 			` / _| |`,
 			`/_/ |_|`,
+			`       `,
 		}
 	case 'C':
 		return Banner{
@@ -21,6 +22,7 @@ func getUppercase(a byte) Banner {
 			` / __/`,
 			`/ /___`,
 			`\____/`,
+			`      `,
 		}
 	case 'O':
 		return Banner{
@@ -28,6 +30,7 @@ func getUppercase(a byte) Banner {
 			` / _ \ `,
 			`| |_| |`,
 			` \___/ `,
+			`       `,
 		}
 	case 'E':
 		return Banner{
@@ -35,6 +38,7 @@ func getUppercase(a byte) Banner {
 			`  / __/`,
 			` / _/  `,
 			`/___/  `,
+			`       `,
 		}
 	case 'S':
 		return Banner{
@@ -42,6 +46,7 @@ func getUppercase(a byte) Banner {
 			` / __|`,
 			`\__ \ `,
 			`|___/ `,
+			`      `,
 		}
 	case 'T':
 		return Banner{
@@ -49,6 +54,7 @@ func getUppercase(a byte) Banner {
 			`/_  _/`,
 			` / /  `,
 			`/_/   `,
+			`      `,
 		}
 	case 'F':
 		return Banner{
@@ -56,6 +62,7 @@ func getUppercase(a byte) Banner {
 			`  / __/`,
 			` / __/ `,
 			`/_/    `,
+			`       `,
 		}
 	case 'B':
 		return Banner{
@@ -63,13 +70,15 @@ func getUppercase(a byte) Banner {
 			`  / _ \`,
 			` / _ \ `,
 			`/____/ `,
+			`       `,
 		}
 	case 'D':
 		return Banner{
 			`   __  `,
 			`  / _ \`,
-			` / _/ /`,
+			` / /_//`,
 			`/____/ `,
+			`       `,
 		}
 	case 'I':
 		return Banner{
@@ -77,6 +86,7 @@ func getUppercase(a byte) Banner {
 			`  / /`,
 			` / / `,
 			`/_/  `,
+			`     `,
 		}
 	case 'X':
 		return Banner{
@@ -84,6 +94,7 @@ func getUppercase(a byte) Banner {
 			`\ \/ /`,
 			` |  | `,
 			`/_/\_\`,
+			`      `,
 		}
 	case 'W':
 		return Banner{
@@ -91,6 +102,7 @@ func getUppercase(a byte) Banner {
 			`| | _ //`,
 			`| |//// `,
 			`|_/\_/  `,
+			`        `,
 		}
 	case 'Z':
 		return Banner{
@@ -98,6 +110,7 @@ func getUppercase(a byte) Banner {
 			` /__  /`,
 			`  / /_ `,
 			`/____/ `,
+			`       `,
 		}
 	case 'R':
 		return Banner{
@@ -105,6 +118,7 @@ func getUppercase(a byte) Banner {
 			`  /  _\`,
 			` / /__/`,
 			`/_/ \_\`,
+			`       `,
 		}
 	case 'Y':
 		return Banner{
@@ -112,6 +126,7 @@ func getUppercase(a byte) Banner {
 			`\ \//`,
 			` | | `,
 			` |_| `,
+			`     `,
 		}
 	case 'U':
 		return Banner{
@@ -119,14 +134,15 @@ func getUppercase(a byte) Banner {
 			` / // /`,
 			`/ // / `,
 			`\___/  `,
+			`       `,
 		}
 	case 'K':
 		return Banner{
-
 			`   __ _`,
 			`  / ///`,
 			` /   / `,
 			`/_/\_\ `,
+			`       `,
 		}
 
 	case 'J':
@@ -135,6 +151,7 @@ func getUppercase(a byte) Banner {
 			`    / /`,
 			` __/ / `,
 			`/___/  `,
+			`       `,
 		}
 	case 'H':
 		return Banner{
@@ -142,6 +159,7 @@ func getUppercase(a byte) Banner {
 			`  / // /`,
 			` / _  / `,
 			`/_//_/  `,
+			`        `,
 		}
 	case 'G':
 		return Banner{
@@ -149,22 +167,23 @@ func getUppercase(a byte) Banner {
 			` / __/ `,
 			`| ||__|`,
 			` \___/ `,
+			`       `,
 		}
 	case 'V':
 		return Banner{
-
 			`__    _`,
 			`\ \  //`,
 			` \ \// `,
 			`  \_/  `,
+			`       `,
 		}
 	case 'M':
 		return Banner{
-
-			`   __ __`,
-			`  / |/ /`,
-			` / //// `,
-			`/_////  `,
+			`   __ ___`,
+			`  / |/  /`,
+			` /  _  / `,
+			`/_/ /_/  `,
+			`         `,
 		}
 	case 'P':
 		return Banner{
@@ -172,32 +191,35 @@ func getUppercase(a byte) Banner {
 			`  / _ \`,
 			` / ___/`,
 			`/_/    `,
+			`       `,
 		}
 	case 'L':
 		return Banner{
-
 			`   __`,
 			`  / /`,
 			` / /_`,
 			`/___/`,
+			`     `,
 		}
 	case 'N':
 		return Banner{
 			`   __ __`,
 			`  / // /`,
-			` / /\ / `,
+			` /  \ / `,
 			`/_//_/  `,
+			`        `,
 		}
 	case 'Q':
 		return Banner{
-			` ___  `,
-			`/  _ \`,
-			`| |_||`,
-			`\____\`,
+			` ___   `,
+			`/  _ \ `,
+			`| |_|| `,
+			`\___/_\`,
+			`       `,
 		}
 	default:
 		return Banner{
-			``,``,``,``,
+			``,``,``,``,``,
 		}
 	}
 }
@@ -210,6 +232,7 @@ func getLowercase(a byte) Banner {
 			` ___  `,
 			`/ _ | `,
 			`\____/`,
+			`      `,
 		}
 	case 'c':
 		return Banner{
@@ -217,6 +240,7 @@ func getLowercase(a byte) Banner {
 			`  ___`,
 			`/ __/`,
 			`\__/ `,
+			`     `,
 		}
 	case 'o':
 		return Banner{
@@ -224,21 +248,24 @@ func getLowercase(a byte) Banner {
 			` ___ `,
 			`/ _ \`,
 			`\___/`,
+			`     `,
 		}
 
 	case 'e':
 		return Banner{
 			`     `,
 			` ___ `,
-			`/ __|`,
+			`/ __\`,
 			`\___/`,
+			`     `,
 		}
 	case 's':
 		return Banner{
 			`     `,
 			` ____`,
-			`/ __/`,
+			`/ __\`,
 			`/___/`,
+			`     `,
 		}
 	case 't':
 		return Banner{
@@ -246,6 +273,7 @@ func getLowercase(a byte) Banner {
 			` __/ /_`,
 			`/_  __/`,
 			` /__/  `,
+			`       `,
 		}
 	case 'f':
 		return Banner{
@@ -253,6 +281,7 @@ func getLowercase(a byte) Banner {
 			` __/ _/`,
 			`/_  _/ `,
 			` /_/   `,
+			`       `,
 		}
 	case 'b':
 		return Banner{
@@ -260,6 +289,7 @@ func getLowercase(a byte) Banner {
 			`  / / `,
 			` / _ \`,
 			`/____/`,
+			`      `,
 		}
 	case 'd':
 		return Banner{
@@ -267,6 +297,7 @@ func getLowercase(a byte) Banner {
 			` __/ /`,
 			`/ _ / `,
 			`\__/  `,
+			`      `,
 		}
 	case 'i':
 		return Banner{
@@ -274,6 +305,7 @@ func getLowercase(a byte) Banner {
 			` /_/`,
 			` / /`,
 			`/_/ `,
+			`    `,
 		}
 	case 'x':
 		return Banner{
@@ -281,6 +313,7 @@ func getLowercase(a byte) Banner {
 			`__  _`,
 			`\ \//`,
 			`/_/\\`,
+			`     `,
 		}
 	case 'w':
 		return Banner{
@@ -288,6 +321,7 @@ func getLowercase(a byte) Banner {
 			`  _ _ _`,
 			` / ////`,
 			`/_/\_/ `,
+			`       `,
 		}
 	case 'z':
 		return Banner{
@@ -295,6 +329,7 @@ func getLowercase(a byte) Banner {
 			` ____`,
 			`/_  /`,
 			`/___/`,
+			`     `,
 		}
 	case 'r':
 		return Banner{
@@ -302,6 +337,7 @@ func getLowercase(a byte) Banner {
 			`  ___ `,
 			` / __\`,
 			`/_/   `,
+			`      `,
 		}
 	case 'y':
 		return Banner{
@@ -309,6 +345,7 @@ func getLowercase(a byte) Banner {
 			`__  _`,
 			`\ \//`,
 			`/__/ `,
+			`     `,
 		}
 	case 'u':
 		return Banner{
@@ -316,6 +353,7 @@ func getLowercase(a byte) Banner {
 			` __ __`,
 			`/ // /`,
 			`\____/`,
+			`      `,
 		}
 	case 'k':
 		return Banner{
@@ -323,6 +361,7 @@ func getLowercase(a byte) Banner {
 			`  __ _`,
 			` / ///`,
 			`/_/\_\`,
+			`      `,
 		}
 	case 'j':
 		return Banner{
@@ -330,6 +369,7 @@ func getLowercase(a byte) Banner {
 			`   /_/`,
 			` __/ /`,
 			`/___/ `,
+			`      `,
 		}
 	case 'h':
 		return Banner{
@@ -337,9 +377,11 @@ func getLowercase(a byte) Banner {
 			`  / / `,
 			` / _ \`,
 			`/_//_/`,
+			`      `,
 		}
 	case 'g':
 		return Banner{
+			`      `,
 			`  ____`,
 			` / _ /`,
 			`_\_ / `,
@@ -351,6 +393,7 @@ func getLowercase(a byte) Banner {
 			`__  _`,
 			`\ \//`,
 			` \_/ `,
+			`     `,
 		}
 	case 'm':
 		return Banner{
@@ -358,9 +401,11 @@ func getLowercase(a byte) Banner {
 			`  __ __`,
 			` / |/ /`,
 			`/_//// `,
+			`       `,
 		}
 	case 'p':
 		return Banner{
+			`       `,
 			`   ___ `,
 			`  / _ \`,
 			` / ___/`,
@@ -372,6 +417,7 @@ func getLowercase(a byte) Banner {
 			`  / /`,
 			` / /_`,
 			`/___/`,
+			`     `,
 		}
 	case 'n':
 		return Banner{
@@ -379,9 +425,11 @@ func getLowercase(a byte) Banner {
 			`  __  `,
 			` / _ \`,
 			`/_//_/`,
+			`      `,
 		}
 	case 'q':
 		return Banner{
+			`      `,
 			` _____`,
 			`/ _  /`,
 			`\_  / `,
@@ -401,25 +449,63 @@ func getCase(a byte) Banner{
 	return getUppercase(a)
 }
 
-func GetBanner(str string) Banner {
-	result := []Banner{}
-	for i := 0; i < len(str); i++ {
-		result = append(result, getCase(str[i]))
-	}
-	banner := Banner{}
-	for i := 0; i < 4; i++ {
-		ss := ""
-		for _, v := range result {
-			ss += v[i]
-		}
-		banner = append(banner, ss)
-	}
-	return banner
-}
-
 func (b Banner) Show() {
 	for _, v := range b {
 		fmt.Println(v)
 	}
 }
 
+func (b Banner) GetEmptyNumber(back bool) []int {
+	result := []int{}
+	for _, v := range b {
+		num := 0
+		for i := 0; i < len(v); i++ {
+			idx := i
+			if back {
+				idx = len(v) - i - 1
+			}
+			if v[idx] == ' ' {
+				num++
+			} else {
+				break
+			}
+		}
+		result = append(result, num)
+	}
+	return result
+}
+
+func getSumMinimun(as, bs []int) int {
+	min := 1000
+	for i, v := range as {
+		if min > v + bs[i] {
+			min = v + bs[i]
+		}
+	}
+	return min
+}
+
+func (b Banner) Append(a Banner) {
+	back := b.GetEmptyNumber(true)
+	forward := a.GetEmptyNumber(false)
+	erase := getSumMinimun(back, forward)
+	for i, _ := range b {
+		var backGet, forwardGet int
+		if erase > back[i] {
+			backGet = back[i]
+			forwardGet = erase - backGet
+		} else {
+			backGet = erase
+			forwardGet = 0
+		}
+		b[i] = b[i][:len(b[i]) - backGet] + a[i][forwardGet:]
+	}
+}
+
+func GetBanner(str string) Banner {
+	banner := getCase(str[0])
+	for i := 1; i < len(str); i++ {
+		banner.Append(getCase(str[i]))
+	}
+	return banner
+}
