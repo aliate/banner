@@ -26,10 +26,10 @@ func getUppercase(a byte) Ascii {
 		}
 	case 'O':
 		return Ascii{
-			`  ___  `,
-			` / _ \ `,
-			`| |_| |`,
-			` \___/ `,
+			`  ___ `,
+			` / _ \`,
+			`| |_||`,
+			`\___/ `,
 			`       `,
 		}
 	case 'E':
@@ -68,13 +68,13 @@ func getUppercase(a byte) Ascii {
 		return Ascii{
 			`   ___ `,
 			`  / _ \`,
-			` / _ \ `,
+			` / _  /`,
 			`/____/ `,
 			`       `,
 		}
 	case 'D':
 		return Ascii{
-			`   __  `,
+			`   ___ `,
 			`  / _ \`,
 			` / /_//`,
 			`/____/ `,
@@ -90,11 +90,11 @@ func getUppercase(a byte) Ascii {
 		}
 	case 'X':
 		return Ascii{
-			`__  __`,
-			`\ \/ /`,
-			` |  | `,
-			`/_/\_\`,
-			`      `,
+			` __  __`,
+			` \ \/ /`,
+			` |   | `,
+			`/_/\_\ `,
+			`       `,
 		}
 	case 'W':
 		return Ascii{
@@ -114,18 +114,18 @@ func getUppercase(a byte) Ascii {
 		}
 	case 'R':
 		return Ascii{
-			`   ___ `,
-			`  /  _\`,
-			` / /__/`,
-			`/_/ \_\`,
-			`       `,
+			`   ____ `,
+			`  / _  \`,
+			` / _  / `,
+			`/_/ \_\ `,
+			`        `,
 		}
 	case 'Y':
 		return Ascii{
 			`__  _`,
 			`\ \//`,
-			` | | `,
-			` |_| `,
+			` / / `,
+			`/_/  `,
 			`     `,
 		}
 	case 'U':
@@ -163,19 +163,19 @@ func getUppercase(a byte) Ascii {
 		}
 	case 'G':
 		return Ascii{
-			`  ____ `,
-			` / __/ `,
-			`| ||__|`,
-			` \___/ `,
-			`       `,
+			`  ____`,
+			` / __/`,
+			`| ||_|`,
+			`\___/ `,
+			`      `,
 		}
 	case 'V':
 		return Ascii{
-			`__    _`,
-			`\ \  //`,
-			` \ \// `,
-			`  \_/  `,
-			`       `,
+			`__   _`,
+			`| | //`,
+			`| |// `,
+			`|__/  `,
+			`      `,
 		}
 	case 'M':
 		return Ascii{
@@ -211,10 +211,10 @@ func getUppercase(a byte) Ascii {
 		}
 	case 'Q':
 		return Ascii{
-			` ___   `,
-			`/  _ \ `,
-			`| |_|| `,
-			`\___/_\`,
+			`  ____ `,
+			` / __ \`,
+			`| |__||`,
+			`\___\_\`,
 			`       `,
 		}
 	default:
@@ -237,7 +237,7 @@ func getLowercase(a byte) Ascii {
 	case 'c':
 		return Ascii{
 			`     `,
-			`  ___`,
+			` ____`,
 			`/ __/`,
 			`\__/ `,
 			`     `,
@@ -309,27 +309,27 @@ func getLowercase(a byte) Ascii {
 		}
 	case 'x':
 		return Ascii{
-			`     `,
-			`__  _`,
-			`\ \//`,
-			`/_/\\`,
-			`     `,
+			`      `,
+			` __  _`,
+			` \ \//`,
+			`/_/\\ `,
+			`      `,
 		}
 	case 'w':
 		return Ascii{
 			`       `,
-			`  _ _ _`,
-			` / ////`,
-			`/_/\_/ `,
+			`__ _ __`,
+			`| /// /`,
+			`|_/\_/ `,
 			`       `,
 		}
 	case 'z':
 		return Ascii{
-			`     `,
-			` ____`,
-			`/_  /`,
-			`/___/`,
-			`     `,
+			`      `,
+			`  ____`,
+			` /_  /`,
+			`/___/ `,
+			`      `,
 		}
 	case 'r':
 		return Ascii{
@@ -341,11 +341,11 @@ func getLowercase(a byte) Ascii {
 		}
 	case 'y':
 		return Ascii{
-			`     `,
-			` _  _`,
-			` \\//`,
-			` / / `,
-			`/_/  `,
+			`      `,
+			` __  _`,
+			` \ \//`,
+			`  / / `,
+			` /_/  `,
 		}
 	case 'u':
 		return Ascii{
@@ -357,9 +357,9 @@ func getLowercase(a byte) Ascii {
 		}
 	case 'k':
 		return Ascii{
-			`      `,
-			`  __ _`,
-			` / ///`,
+			`   __ `,
+			`  / /_`,
+			` /  //`,
 			`/_/\_\`,
 			`      `,
 		}
@@ -391,8 +391,8 @@ func getLowercase(a byte) Ascii {
 		return Ascii{
 			`     `,
 			`__  _`,
-			`\ \//`,
-			` \_/ `,
+			`| \//`,
+			`|__/ `,
 			`     `,
 		}
 	case 'm':
@@ -413,10 +413,10 @@ func getLowercase(a byte) Ascii {
 		}
 	case 'l':
 		return Ascii{
-			`   __`,
-			`  / /`,
-			` / /_`,
-			`/___/`,
+			`  __ `,
+			` / / `,
+			`/ /_ `,
+			`\___/`,
 			`     `,
 		}
 	case 'n':
@@ -488,12 +488,19 @@ type UnionRecord struct {
 	Second		byte
 }
 
-func isShouldAdjoin(a byte, b byte) bool {
-	return (a == '/' || a == '_') &&
-			(b == '/' || b == '_') ||
-			a == ' ' ||
-			b == ' '
+func (u *UnionRecord) hasEmpty() bool {
+	return u.First == ' ' || u.Second == ' '
 }
+
+func (u *UnionRecord) isPair() bool {
+	return u.First == '/' && u.Second == '/' ||
+	u.First == '\\' && u.Second == '\\'
+}
+
+func (u *UnionRecord) shouldAdjoin() bool {
+	return u.hasEmpty() || u.isPair()
+}
+
 
 func (b Ascii) isEmpty() bool {
 	for _, v := range b {
@@ -542,10 +549,10 @@ func (b Ascii) joinOne(a Ascii, adjoin bool) {
 	hasPair := false
 	shouldAraseMoreOne := true
 	for _, record := range unionRecords {
-		if record.First == '/' && record.Second == '/' {
+		if record.isPair() {
 			hasPair = true
 		}
-		if !isShouldAdjoin(record.First, record.Second) {
+		if !record.shouldAdjoin() {
 			shouldAraseMoreOne = false
 		}
 	}
