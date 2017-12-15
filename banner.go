@@ -4,12 +4,12 @@ import (
 	"fmt"
 )
 
-type Banner []string
+type Ascii []string
 
-func getUppercase(a byte) Banner {
+func getUppercase(a byte) Ascii {
 	switch a {
 	case 'A':
-		return Banner{
+		return Ascii{
 			`   ___ `,
 			`  /   |`,
 			` / _| |`,
@@ -17,7 +17,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'C':
-		return Banner{
+		return Ascii{
 			`  ____`,
 			` / __/`,
 			`/ /___`,
@@ -25,7 +25,7 @@ func getUppercase(a byte) Banner {
 			`      `,
 		}
 	case 'O':
-		return Banner{
+		return Ascii{
 			`  ___  `,
 			` / _ \ `,
 			`| |_| |`,
@@ -33,7 +33,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'E':
-		return Banner{
+		return Ascii{
 			`   ____`,
 			`  / __/`,
 			` / _/  `,
@@ -41,7 +41,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'S':
-		return Banner{
+		return Ascii{
 			`  ___ `,
 			` / __|`,
 			`\__ \ `,
@@ -49,7 +49,7 @@ func getUppercase(a byte) Banner {
 			`      `,
 		}
 	case 'T':
-		return Banner{
+		return Ascii{
 			` _____`,
 			`/_  _/`,
 			` / /  `,
@@ -57,7 +57,7 @@ func getUppercase(a byte) Banner {
 			`      `,
 		}
 	case 'F':
-		return Banner{
+		return Ascii{
 			`   ____`,
 			`  / __/`,
 			` / __/ `,
@@ -65,7 +65,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'B':
-		return Banner{
+		return Ascii{
 			`   ___ `,
 			`  / _ \`,
 			` / _ \ `,
@@ -73,7 +73,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'D':
-		return Banner{
+		return Ascii{
 			`   __  `,
 			`  / _ \`,
 			` / /_//`,
@@ -81,7 +81,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'I':
-		return Banner{
+		return Ascii{
 			`   __`,
 			`  / /`,
 			` / / `,
@@ -89,7 +89,7 @@ func getUppercase(a byte) Banner {
 			`     `,
 		}
 	case 'X':
-		return Banner{
+		return Ascii{
 			`__  __`,
 			`\ \/ /`,
 			` |  | `,
@@ -97,7 +97,7 @@ func getUppercase(a byte) Banner {
 			`      `,
 		}
 	case 'W':
-		return Banner{
+		return Ascii{
 			`___    _`,
 			`| | _ //`,
 			`| |//// `,
@@ -105,7 +105,7 @@ func getUppercase(a byte) Banner {
 			`        `,
 		}
 	case 'Z':
-		return Banner{
+		return Ascii{
 			`  _____`,
 			` /__  /`,
 			`  / /_ `,
@@ -113,7 +113,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'R':
-		return Banner{
+		return Ascii{
 			`   ___ `,
 			`  /  _\`,
 			` / /__/`,
@@ -121,7 +121,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'Y':
-		return Banner{
+		return Ascii{
 			`__  _`,
 			`\ \//`,
 			` | | `,
@@ -129,7 +129,7 @@ func getUppercase(a byte) Banner {
 			`     `,
 		}
 	case 'U':
-		return Banner{
+		return Ascii{
 			`  __ __`,
 			` / // /`,
 			`/ // / `,
@@ -137,7 +137,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'K':
-		return Banner{
+		return Ascii{
 			`   __ _`,
 			`  / ///`,
 			` /   / `,
@@ -146,7 +146,7 @@ func getUppercase(a byte) Banner {
 		}
 
 	case 'J':
-		return Banner{
+		return Ascii{
 			`     __`,
 			`    / /`,
 			` __/ / `,
@@ -154,7 +154,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'H':
-		return Banner{
+		return Ascii{
 			`   __ __`,
 			`  / // /`,
 			` / _  / `,
@@ -162,7 +162,7 @@ func getUppercase(a byte) Banner {
 			`        `,
 		}
 	case 'G':
-		return Banner{
+		return Ascii{
 			`  ____ `,
 			` / __/ `,
 			`| ||__|`,
@@ -170,7 +170,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'V':
-		return Banner{
+		return Ascii{
 			`__    _`,
 			`\ \  //`,
 			` \ \// `,
@@ -178,7 +178,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'M':
-		return Banner{
+		return Ascii{
 			`   __ ___`,
 			`  / |/  /`,
 			` /  _  / `,
@@ -186,7 +186,7 @@ func getUppercase(a byte) Banner {
 			`         `,
 		}
 	case 'P':
-		return Banner{
+		return Ascii{
 			`   ___ `,
 			`  / _ \`,
 			` / ___/`,
@@ -194,7 +194,7 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	case 'L':
-		return Banner{
+		return Ascii{
 			`   __`,
 			`  / /`,
 			` / /_`,
@@ -202,7 +202,7 @@ func getUppercase(a byte) Banner {
 			`     `,
 		}
 	case 'N':
-		return Banner{
+		return Ascii{
 			`   __ __`,
 			`  / // /`,
 			` /  \ / `,
@@ -210,7 +210,7 @@ func getUppercase(a byte) Banner {
 			`        `,
 		}
 	case 'Q':
-		return Banner{
+		return Ascii{
 			` ___   `,
 			`/  _ \ `,
 			`| |_|| `,
@@ -218,16 +218,16 @@ func getUppercase(a byte) Banner {
 			`       `,
 		}
 	default:
-		return Banner{
-			``,``,``,``,``,
+		return Ascii{
+			``, ``, ``, ``, ``,
 		}
 	}
 }
 
-func getLowercase(a byte) Banner {
+func getLowercase(a byte) Ascii {
 	switch a {
 	case 'a':
-		return Banner{
+		return Ascii{
 			`      `,
 			` ___  `,
 			`/ _ | `,
@@ -235,7 +235,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'c':
-		return Banner{
+		return Ascii{
 			`     `,
 			`  ___`,
 			`/ __/`,
@@ -243,7 +243,7 @@ func getLowercase(a byte) Banner {
 			`     `,
 		}
 	case 'o':
-		return Banner{
+		return Ascii{
 			`     `,
 			` ___ `,
 			`/ _ \`,
@@ -252,7 +252,7 @@ func getLowercase(a byte) Banner {
 		}
 
 	case 'e':
-		return Banner{
+		return Ascii{
 			`     `,
 			` ___ `,
 			`/ __\`,
@@ -260,7 +260,7 @@ func getLowercase(a byte) Banner {
 			`     `,
 		}
 	case 's':
-		return Banner{
+		return Ascii{
 			`     `,
 			` ____`,
 			`/ __\`,
@@ -268,7 +268,7 @@ func getLowercase(a byte) Banner {
 			`     `,
 		}
 	case 't':
-		return Banner{
+		return Ascii{
 			`    __ `,
 			` __/ /_`,
 			`/_  __/`,
@@ -276,7 +276,7 @@ func getLowercase(a byte) Banner {
 			`       `,
 		}
 	case 'f':
-		return Banner{
+		return Ascii{
 			`    ___`,
 			` __/ _/`,
 			`/_  _/ `,
@@ -284,7 +284,7 @@ func getLowercase(a byte) Banner {
 			`/_/    `,
 		}
 	case 'b':
-		return Banner{
+		return Ascii{
 			`   __ `,
 			`  / / `,
 			` / _ \`,
@@ -292,7 +292,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'd':
-		return Banner{
+		return Ascii{
 			`    __`,
 			` __/ /`,
 			`/ _ / `,
@@ -300,7 +300,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'i':
-		return Banner{
+		return Ascii{
 			`  __`,
 			` /_/`,
 			` / /`,
@@ -308,7 +308,7 @@ func getLowercase(a byte) Banner {
 			`    `,
 		}
 	case 'x':
-		return Banner{
+		return Ascii{
 			`     `,
 			`__  _`,
 			`\ \//`,
@@ -316,7 +316,7 @@ func getLowercase(a byte) Banner {
 			`     `,
 		}
 	case 'w':
-		return Banner{
+		return Ascii{
 			`       `,
 			`  _ _ _`,
 			` / ////`,
@@ -324,7 +324,7 @@ func getLowercase(a byte) Banner {
 			`       `,
 		}
 	case 'z':
-		return Banner{
+		return Ascii{
 			`     `,
 			` ____`,
 			`/_  /`,
@@ -332,7 +332,7 @@ func getLowercase(a byte) Banner {
 			`     `,
 		}
 	case 'r':
-		return Banner{
+		return Ascii{
 			`      `,
 			`  ___ `,
 			` / __\`,
@@ -340,7 +340,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'y':
-		return Banner{
+		return Ascii{
 			`     `,
 			` _  _`,
 			` \\//`,
@@ -348,7 +348,7 @@ func getLowercase(a byte) Banner {
 			`/_/  `,
 		}
 	case 'u':
-		return Banner{
+		return Ascii{
 			`      `,
 			` __ __`,
 			`/ // /`,
@@ -356,7 +356,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'k':
-		return Banner{
+		return Ascii{
 			`      `,
 			`  __ _`,
 			` / ///`,
@@ -364,7 +364,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'j':
-		return Banner{
+		return Ascii{
 			`     __`,
 			`    /_/`,
 			`    / /`,
@@ -372,7 +372,7 @@ func getLowercase(a byte) Banner {
 			`/___/  `,
 		}
 	case 'h':
-		return Banner{
+		return Ascii{
 			`   __ `,
 			`  / / `,
 			` / _ \`,
@@ -380,7 +380,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'g':
-		return Banner{
+		return Ascii{
 			`      `,
 			`  ____`,
 			` / _ /`,
@@ -388,7 +388,7 @@ func getLowercase(a byte) Banner {
 			`\__/  `,
 		}
 	case 'v':
-		return Banner{
+		return Ascii{
 			`     `,
 			`__  _`,
 			`\ \//`,
@@ -396,7 +396,7 @@ func getLowercase(a byte) Banner {
 			`     `,
 		}
 	case 'm':
-		return Banner{
+		return Ascii{
 			`       `,
 			`  __ __`,
 			` / |/ /`,
@@ -404,7 +404,7 @@ func getLowercase(a byte) Banner {
 			`       `,
 		}
 	case 'p':
-		return Banner{
+		return Ascii{
 			`       `,
 			`   ___ `,
 			`  / _ \`,
@@ -412,7 +412,7 @@ func getLowercase(a byte) Banner {
 			`/_/    `,
 		}
 	case 'l':
-		return Banner{
+		return Ascii{
 			`   __`,
 			`  / /`,
 			` / /_`,
@@ -420,7 +420,7 @@ func getLowercase(a byte) Banner {
 			`     `,
 		}
 	case 'n':
-		return Banner{
+		return Ascii{
 			`      `,
 			`  __  `,
 			` / _ \`,
@@ -428,7 +428,7 @@ func getLowercase(a byte) Banner {
 			`      `,
 		}
 	case 'q':
-		return Banner{
+		return Ascii{
 			`      `,
 			` _____`,
 			`/ _  /`,
@@ -436,28 +436,26 @@ func getLowercase(a byte) Banner {
 			` /_/  `,
 		}
 	default:
-		return Banner{
-			``,``,``,``,``,
+		return Ascii{
+			``, ``, ``, ``, ``,
 		}
 	}
 }
 
-func getCase(a byte) Banner{
+func getAscii(a byte) Ascii {
 	if a >= 'a' && a <= 'z' {
 		return getLowercase(a)
 	}
 	return getUppercase(a)
 }
 
-
-
-func (b Banner) GetEmptyNumber(back bool) []int {
-	result := []int{}
-	for _, v := range b {
+func getAsciiBlankInfo(ascii Ascii, fromBack bool) []int {
+	BlankInfo := []int{}
+	for _, v := range ascii {
 		num := 0
 		for i := 0; i < len(v); i++ {
 			idx := i
-			if back {
+			if fromBack {
 				idx = len(v) - i - 1
 			}
 			if v[idx] == ' ' {
@@ -466,70 +464,82 @@ func (b Banner) GetEmptyNumber(back bool) []int {
 				break
 			}
 		}
-		result = append(result, num)
+		BlankInfo = append(BlankInfo, num)
 	}
-	return result
+	return BlankInfo
 }
 
-func getSumMinimun(as, bs []int) int {
-	min := 1000
-	for i, v := range as {
-		if min > v + bs[i] {
-			min = v + bs[i]
+const MaxInt = int(^uint(0) >> 1)
+
+func getAsciiUnionSpace(firstBlankInfo, secondBlankInfo []int) int {
+	space := MaxInt
+	for i, v := range firstBlankInfo {
+		if space > v + secondBlankInfo[i] {
+			space = v + secondBlankInfo[i]
 		}
 	}
-	return min
+	return space
 }
-
 
 type UnionRecord struct {
-	backPos		int
-	forwardPos	int
-	shouldUnion	bool
+	BackPos     int
+	ForwardPos  int
+	First		byte
+	Second		byte
 }
 
-func isUnionCode(c byte) bool {
-	return c == ' ' || c == '/' || c == '_'
+func isShouldAdjoin(a byte, b byte) bool {
+	return (a == '/' || a == '_') &&
+			(b == '/' || b == '_') ||
+			a == ' ' ||
+			b == ' '
 }
 
-func (b Banner) Append(a Banner) {
-	back := b.GetEmptyNumber(true)
-	forward := a.GetEmptyNumber(false)
-	erase := getSumMinimun(back, forward)
+func (b Ascii) Append(a Ascii, adjoin bool) {
+	back := getAsciiBlankInfo(b, true)
+	forward := getAsciiBlankInfo(a, false)
+	erase := getAsciiUnionSpace(back, forward)
 
-        unionRecords := []UnionRecord{}
-        for i, _ := range b {
-                record := UnionRecord{}
-                if erase > back[i] {
-			record.backPos = back[i]
-			record.forwardPos = erase - record.backPos
+	unionRecords := []UnionRecord{}
+	for i, _ := range b {
+		var backPos, forwardPos int
+		if erase > back[i] {
+			backPos = back[i]
+			forwardPos = erase - backPos
 		} else {
-			record.backPos = erase
-			record.forwardPos = 0
+			backPos = erase
+			forwardPos = 0
 		}
-		bByte := b[i][len(b[i]) - record.backPos - 1]
-		fByte := a[i][record.forwardPos]
-                if isUnionCode(bByte) && isUnionCode(fByte) {
-			record.shouldUnion = true
-		} else if bByte == ' ' || fByte == ' ' {
-			record.shouldUnion = true
-		}
-                unionRecords = append(unionRecords, record)
-        }
+		unionRecords = append(unionRecords, UnionRecord{
+			BackPos: backPos,
+			ForwardPos: forwardPos,
+			First: b[i][len(b[i])-backPos-1],
+			Second: a[i][forwardPos],
+		})
+	}
 
+	hasPair := false
 	shouldAraseMoreOne := true
 	for _, record := range unionRecords {
-		if !record.shouldUnion {
+		if record.First == '/' && record.Second == '/' {
+			hasPair = true
+		}
+		if !isShouldAdjoin(record.First, record.Second) {
 			shouldAraseMoreOne = false
 		}
 	}
 
+	if !hasPair {
+		shouldAraseMoreOne = false
+	}
+
+
 	for i, _ := range b {
-                record := unionRecords[i]
-                backGet := len(b[i]) - record.backPos
-                forwardGet := record.forwardPos
-		if shouldAraseMoreOne {
-			if b[i][backGet - 1] == ' ' {
+		record := unionRecords[i]
+		backGet := len(b[i]) - record.BackPos
+		forwardGet := record.ForwardPos
+		if shouldAraseMoreOne && adjoin {
+			if b[i][backGet-1] == ' ' {
 				backGet -= 1
 			} else {
 				forwardGet += 1
@@ -539,16 +549,31 @@ func (b Banner) Append(a Banner) {
 	}
 }
 
-func NewBanner(str string) Banner {
-	banner := getCase(str[0])
-	for i := 1; i < len(str); i++ {
-		banner.Append(getCase(str[i]))
-	}
-	return banner
-}
-
-func (b Banner) Show() {
+func (b Ascii) Show() {
 	for _, v := range b {
 		fmt.Println(v)
 	}
+}
+
+type Banner struct {
+	Origin	string
+	Adjoin	bool
+	Ascii	Ascii
+}
+
+func NewBanner(str string, adjoin bool) *Banner {
+	b := &Banner{
+		Origin: str,
+		Adjoin: adjoin,
+	}
+	ascii := getAscii(str[0])
+	for i := 1; i < len(str); i++ {
+		ascii.Append(getAscii(str[i]), adjoin)
+	}
+	b.Ascii = ascii
+	return b
+}
+
+func (b *Banner) Show() {
+	b.Ascii.Show()
 }
