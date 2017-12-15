@@ -219,7 +219,7 @@ func getUppercase(a byte) Ascii {
 		}
 	default:
 		return Ascii{
-			``, ``, ``, ``, ``,
+			` `, ` `, ` `, ` `, ` `,
 		}
 	}
 }
@@ -437,7 +437,7 @@ func getLowercase(a byte) Ascii {
 		}
 	default:
 		return Ascii{
-			``, ``, ``, ``, ``,
+			` `, ` `, ` `, ` `, ` `,
 		}
 	}
 }
@@ -495,7 +495,28 @@ func isShouldAdjoin(a byte, b byte) bool {
 			b == ' '
 }
 
+func (b Ascii) isEmpty() bool {
+	for _, v := range b {
+		for _, i  := range v {
+			if i != ' ' {
+				return false
+			}
+		}
+	}
+	return true
+}
+
 func (b Ascii) Append(a Ascii, adjoin bool) {
+	if b.isEmpty() || a.isEmpty() {
+		for i, _ := range b {
+			b[i] = b[i] + a[i]
+		}
+	} else {
+		b.joinOne(a, adjoin)
+	}
+}
+
+func (b Ascii) joinOne(a Ascii, adjoin bool) {
 	back := getAsciiBlankInfo(b, true)
 	forward := getAsciiBlankInfo(a, false)
 	erase := getAsciiUnionSpace(back, forward)
