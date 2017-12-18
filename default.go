@@ -218,8 +218,8 @@ func (d DefaultTheme) Convert(b byte) Ascii {
 	case 'a':
 		return Ascii{
 			`      `,
-			` ___  `,
-			`/ _ | `,
+			` __/\ `,
+			`/ _ /_`,
 			`\____/`,
 			`      `,
 		}
